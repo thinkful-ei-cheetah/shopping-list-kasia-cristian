@@ -25,6 +25,7 @@ $(function addToList() {
         </div> 
     </li>
         `);
+        $('input').val(' ');
     })
 })
 
