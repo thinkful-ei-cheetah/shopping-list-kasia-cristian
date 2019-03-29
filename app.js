@@ -10,11 +10,11 @@ $(function addToList() {
     $('#js-shopping-list-form')
     .submit(function(event) {
         event.preventDefault();
-        const newItem = $('#shopping-list-entry').val();
+        const newItem = $('input').val();
 
         $('.shopping-list').append(`
     <li> 
-        <span class="shopping-item shopping-item__checked">${newItem.val()}</span> 
+        <span class="shopping-item">${newItem}</span> 
         <div class="shopping-item-controls"> 
           <button class="shopping-item-toggle"> 
             <span class="button-label">check</span> 
